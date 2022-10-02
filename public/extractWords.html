@@ -118,7 +118,7 @@
    
 
     } 
-     .buttonSummarize{
+     .buttonExtract1{
     border-radius: 22px;
     /* display: flex;
     align-self: center; */
@@ -134,7 +134,7 @@
     cursor: pointer;
   }
 
-  .buttonSummarize:hover{
+  .buttonExtract1:hover{
     background-color: rgba(225, 214, 214, 0.349);
   }
 
@@ -157,7 +157,7 @@
   
 
       </style>
-      <h4><span class="text_2">Input a long piece of text you would like to summarize</span></h4>
+      <h4><span class="text_2">Input a long piece of text you would like to get keywords from</span></h4>
       <script class="temp">
         function myFunction() {
           var input = document.getElementById("fname").value;
@@ -168,9 +168,10 @@
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify({
           "model": "text-ada-001",
-          "prompt": "Summarize this text:\n\n " + input,
-          "max_tokens": 64,
-          "temperature": 0.7
+          "prompt": "Extract keywords from this text:\n\n " + input,
+          "max_tokens": 60,
+          "temperature": 0.3,
+          "frequency_penalty": 1.0
         }))
         xhr.onload = function() {
           if (xhr.status != 200) { // analyze HTTP status of the response
@@ -189,7 +190,7 @@
 
       </script>
       <textArea class="inputME" type="text" id="fname" name="fname"> </textArea><br><br>
-      <input class="buttonSummarize" type="submit" value="Summarize" onclick="myFunction()">
+      <input class="buttonExtract1" type="submit" value="Extract Words" onclick="myFunction()">
       <output class="outputME" id="outputMeee"></output>
       <textArea class="outputME" id="outputME"> </textArea> 
     </div>
