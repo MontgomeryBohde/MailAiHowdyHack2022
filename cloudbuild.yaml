@@ -6,6 +6,5 @@ steps:
   entrypoint: npm
   args: ['run', 'build']
 - name: node
-  entrypoint: npm
-  args: ['start']
-  
+  entrypoint: serve
+  args: ['build']
