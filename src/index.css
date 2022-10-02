@@ -65,12 +65,14 @@ h3 {
   }
 
   .mainbuttons{
+    font-family: 'Open Sans', sans-serif;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    margin-left: 15px;
+    margin-left: 29px;
+    margin-top: 10px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -79,35 +81,68 @@ h3 {
   }
 
   .summary{
-    border-radius: 25px;
+    border-radius: 22px;
     background-color: transparent;
     color: white;
-    border-color: white;
+    border-color: rgb(252, 248, 248);
     width: 100px;
     height: 50px;
+    font-weight: 600;
+    border-style: solid;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .summary:hover{
+    background-color: rgba(225, 214, 214, 0.349);
   }
 
   .extract{
-    border-radius: 25px;
+    border-radius: 22px;
     background-color: transparent;
     color: white;
     border-color: white;
     width: 100px;
     height: 50px;
+    font-weight: 600;
+    border-style: solid;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .extract:hover{
+    background-color: rgba(225, 214, 214, 0.349);
   }
   .translate{
-    border-radius: 25px;
+    border-radius: 22px;
     background-color: transparent;
     color: white;
     border-color: white;
     width: 100px;
     height: 50px;
+    font-weight: 600;
+    border-style: solid;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .translate:hover{
+    background-color: rgba(225, 214, 214, 0.349);
   }
   .response{
-    border-radius: 25px;
+    border-radius: 22px;
     background-color: transparent;
     color: white;
-    border-color: white;
+    border-color: rgb(255, 255, 255);
     width: 100px;
     height: 50px;
+    font-weight: 600;
+    border-style: solid;
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
+
+  .response:hover{
+    background-color: rgba(225, 214, 214, 0.349);
+  }
+  
