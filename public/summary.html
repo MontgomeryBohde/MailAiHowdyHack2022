@@ -93,6 +93,66 @@
       from, to {opacity: 0;}
       50% {opacity: 1;}
     }
+
+    .inputME {
+      
+      width: 400px;
+      height: 350px;
+      padding: 0 0 300px 0;
+    
+      flex-wrap: wrap;
+      top: 200px;
+      left: 100px;
+      right: 0px;
+      bottom: 0px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      -webkit-transition: 0.5s;
+      border-color: rgb(255, 255, 255);
+      transition: 0.5s;
+      outline: none;
+      border-radius: 8px;
+      font-size: 30px;
+      position: fixed;
+   
+
+    } 
+     .buttonSummarize{
+    border-radius: 22px;
+    /* display: flex;
+    align-self: center; */
+    margin-left: 750px;
+    background-color: transparent;
+    color: white;
+    border-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 50px;
+    font-weight: 600;
+    border-style: solid;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .buttonSummarize:hover{
+    background-color: rgba(225, 214, 214, 0.349);
+  }
+
+  .outputME{
+    /* display: flex;
+    align-self: center; */
+    display: inline;
+    width: 400px;
+    height: 350px;
+     /* padding: 0px 300px 0px 0px;  */
+
+      margin-left: 100px;
+    margin-top: -187.5px;
+    background-color: white;
+    color: black;
+    border-color: rgb(255, 255, 255);
+    border-radius: 8px;
+      font-size: 30px;
+  }
   
 
       </style>
@@ -119,16 +179,18 @@
             const res = JSON.parse(xhr.responseText);
             const res2 = JSON.parse(JSON.stringify(res.choices));
             const res3 = res2[0].text;
-            console.log(res3);
+            let output = document.getElementById("outputME");
+            output.innerHTML = res3;
+            //console.log(document.getElementById("fname").value);
           }
         };
       }
 
       </script>
-      <label for="fname">Input:</label>
-      <input type="text" id="fname" name="fname"><br><br>
-      <input type="submit" value="Submit" onclick="myFunction()">
-      
+      <textArea class="inputME" type="text" id="fname" name="fname"> </textArea><br><br>
+      <input class="buttonSummarize" type="submit" value="Summarize" onclick="myFunction()">
+      <output class="outputME" id="outputMeee"></output>
+      <textArea class="outputME" id="outputME"> </textArea> 
     </div>
 
     
