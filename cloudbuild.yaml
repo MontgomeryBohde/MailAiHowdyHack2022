@@ -5,8 +5,3 @@ steps:
 - name: node
   entrypoint: npm
   args: ['run', 'build']
-- name: node
-  script: |
-    #!/bin/bash
-    npm install -g serve
-    serve -s build
