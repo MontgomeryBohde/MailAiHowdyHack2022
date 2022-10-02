@@ -126,7 +126,7 @@
     background-color: transparent;
     color: white;
     border-color: rgb(255, 255, 255);
-    width: 100px;
+    width: 120px;
     height: 50px;
     font-weight: 600;
     border-style: solid;
@@ -157,7 +157,7 @@
   
 
       </style>
-      <h4><span class="text_2">Input a long piece of text you would like to get keywords from</span></h4>
+      <h4><span class="text_2">Input a text you would like to generate a response to</span></h4>
       <script class="temp">
         function myFunction() {
           var input = document.getElementById("fname").value;
@@ -168,10 +168,10 @@
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify({
           "model": "text-ada-001",
-          "prompt": "Extract keywords from this text:\n\n " + input,
+          "prompt": "Create a response based on this input:\n\n " + input,
           "max_tokens": 60,
-          "temperature": 0.3,
-          "frequency_penalty": 1.0
+          "temperature": 0.5,
+          "frequency_penalty": 0.5
         }))
         xhr.onload = function() {
           if (xhr.status != 200) { // analyze HTTP status of the response

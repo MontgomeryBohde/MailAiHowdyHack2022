@@ -97,7 +97,7 @@ h3 {
     background-color: rgba(225, 214, 214, 0.349);
   }
 
-  .extract{
+  .extractWords{
     border-radius: 22px;
     background-color: transparent;
     color: white;
@@ -110,10 +110,10 @@ h3 {
     cursor: pointer;
   }
 
-  .extract:hover{
+  .extractWords:hover{
     background-color: rgba(225, 214, 214, 0.349);
   }
-  .translate{
+  .extractDetails{
     border-radius: 22px;
     background-color: transparent;
     color: white;
@@ -126,7 +126,7 @@ h3 {
     cursor: pointer;
   }
 
-  .translate:hover{
+  .extractDetails:hover{
     background-color: rgba(225, 214, 214, 0.349);
   }
   .response{
