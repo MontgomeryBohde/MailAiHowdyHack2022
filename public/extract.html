@@ -37,11 +37,9 @@
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify({
           "model": "text-ada-001",
-          "prompt": "Extract keywords from this text:\n\n" + input,
-          "max_tokens": 60,
-          "temperature": 0.3,
-          "frequency_penalty": 1.0
-
+          "prompt": "Extract the name and mailing address from this email:\n\n" + input,
+          "max_tokens": 64,
+          "temperature": 0.0
         }))
         xhr.onload = function() {
           if (xhr.status != 200) { // analyze HTTP status of the response

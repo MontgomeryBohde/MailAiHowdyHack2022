@@ -37,8 +37,9 @@
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(JSON.stringify({
           "model": "text-ada-001",
-          "prompt": "Summarize this text: " + input,
-          "max_tokens": 25
+          "prompt": "Summarize this text:\n\n " + input,
+          "max_tokens": 64,
+          "temperature": 0.7
         }))
         xhr.onload = function() {
           if (xhr.status != 200) { // analyze HTTP status of the response
