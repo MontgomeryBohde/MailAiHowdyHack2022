@@ -1,5 +1,5 @@
 # Howdy Hack README
-Mail Service 100 emoji
+TODO: Edit README.md to describe your project.
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
