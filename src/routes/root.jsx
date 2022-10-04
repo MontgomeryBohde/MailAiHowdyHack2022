@@ -29,13 +29,13 @@ export default function Root() {
           <nav>
             <ul>
               <li>
-                <a href={`w_page`}>Aayush</a>
+                <a href={`contact`}>Aayush</a>
               </li>
               <li>
-                <a href={`w_page`}>Adi</a>
+                <a href={`contact`}>Adi</a>
               </li>
               <li>
-                <a href={`w_page`}>Akshay</a>
+                <a href={`contact`}>Akshay</a>
               </li>
             </ul>
           </nav>
