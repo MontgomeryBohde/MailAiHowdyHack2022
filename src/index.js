@@ -10,6 +10,11 @@ import Root from "./routes/root";
 import reportWebVitals from './reportWebVitals';
 import ErrorPage from "./error-page";
 import WPage from "./routes/w_page";
+import Summary from "./routes/summary";
+import Response from "./routes/response";
+import ExtractContacts from "./routes/extractContacts";
+import ExtractDetails from "./routes/extractDetails";
+import Contact from "./routes/contact";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +25,31 @@ const router = createBrowserRouter([
   {
     path: "/w_page",
     element: <WPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/summary",
+    element: <Summary />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/response",
+    element: <Response />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/extractContacts",
+    element: <ExtractContacts />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/extractDetails",
+    element: <ExtractDetails />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
     errorElement: <ErrorPage />,
   }
 ]);
