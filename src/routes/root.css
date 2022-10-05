@@ -1,0 +1,156 @@
+
+    .main {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+    }
+  
+
+
+    h3 {
+        position: absolute;
+        width: 100%;
+        font-size: 100px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: white;
+        margin: 0%;
+        top: 25%;
+        text-align: center;
+    }
+  
+    h4 {
+        font-size: 45px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: white;
+        position: absolute;
+        width: 100%;
+        top: 35%;
+        text-align: center;
+    }
+
+    .text_1 {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typewriter;
+        display: inline-block;
+        position: relative;
+        animation-duration: 10s;
+        animation-timing-function: steps(25.2, end);
+        animation-iteration-count: 0.25;
+        color: white;
+        font-size: 25px;
+    }
+  
+    .text_1::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: blink-caret .1s step-end infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+    }
+  
+    @keyframes typewriter {
+      0%, 100% {
+        width: 0;
+      }
+      20%, 80% {
+        width: 27.2em;
+      }
+    }
+    
+    @keyframes blink-caret {
+      from, to {opacity: 0;}
+      50% {opacity: 1;}
+    }
+    
+  
+    .mainbuttons{
+      font-family: 'Open Sans', sans-serif;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      top: 10%;
+      width: 100%;
+      height: 90%;
+    }
+  
+    .summary{
+      border-radius: 22px;
+      background-color: transparent;
+      color: white;
+      border-color: rgb(252, 248, 248);
+      width: 160px;
+      height: 55px;
+      font-weight: 600;
+      border-style: solid;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      margin: 20px;
+    }
+  
+    .summary:hover{
+      background-color: rgba(225, 214, 214, 0.349);
+    }
+  
+    .extractContacts{
+        border-radius: 22px;
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        width: 160px;
+        height: 55px;
+        font-weight: 600;
+        border-style: solid;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin: 20px;
+    }
+  
+    .extractContacts:hover{
+      background-color: rgba(225, 214, 214, 0.349);
+    }
+    .extractDetails{
+        border-radius: 22px;
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        width: 160px;
+        height: 55px;
+        font-weight: 600;
+        border-style: solid;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin: 20px;
+    }
+  
+    .extractDetails:hover{
+      background-color: rgba(225, 214, 214, 0.349);
+    }
+    .response{
+        border-radius: 22px;
+        background-color: transparent;
+        color: white;
+        border-color: rgb(255, 255, 255);
+        width: 160px;
+        height: 55px;
+        font-weight: 600;
+        border-style: solid;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin: 20px;
+    }
+  
+    .response:hover{
+      background-color: rgba(225, 214, 214, 0.349);
+    }

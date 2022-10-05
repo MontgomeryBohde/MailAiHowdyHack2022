@@ -1,46 +1,18 @@
+import "./root.css";
+
 export default function Root() {
     return (
       <>
-        <div id="sidebar">
-          <h1>React Router Contacts</h1>
-          <div>
-            <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
-              <div
-                id="search-spinner"
-                aria-hidden
-                hidden={true}
-              />
-              <div
-                className="sr-only"
-                aria-live="polite"
-              ></div>
-            </form>
-            <form method="post">
-              <button type="submit">New</button>
-            </form>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href={`contact`}>Aayush</a>
-              </li>
-              <li>
-                <a href={`contact`}>Adi</a>
-              </li>
-              <li>
-                <a href={`contact`}>Akshay</a>
-              </li>
-            </ul>
-          </nav>
+        <div className= "main">
+          <h3>mail.AI</h3>
+          <h4><span className="text_1">A powerful communications toolset powered by AI magic&nbsp;</span></h4>
+          <div className="mainbuttons">
+              <a href="summary"><button className="summary">Summary</button></a>
+              <a href="extractContacts"><button className="extractContacts">Extract Contacts</button></a>
+              <a href="extractDetails"><button className="extractDetails">Extract Details</button></a>
+              <a href="response"><button className="response">Response</button></a>
+          </div>     
         </div>
-        <div id="detail"></div>
       </>
     );
   }
