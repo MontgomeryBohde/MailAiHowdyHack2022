@@ -26,6 +26,8 @@
 }
 
 .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
     animation: typewriter;
     display: inline-block;
     position: relative;
@@ -34,13 +36,10 @@
     animation-iteration-count: 0.25;
     color: white;
     font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
-    width: 25%;
-    text-align: center;
 }
 .text_2::after {
     content: "|";
-    position: absolute;
+    position: relative;
     right: 0;
     animation: blink-caret .1s step-end infinite;
     animation-duration: 1s;
@@ -60,7 +59,6 @@
     }
 
     .inputME {
-    
     width: 400px;
     height: 350px;
     padding: 0 0 300px 0;

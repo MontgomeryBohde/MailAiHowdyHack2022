@@ -9,22 +9,16 @@ import "./index.css";
 import Root from "./routes/root";
 import reportWebVitals from './reportWebVitals';
 import ErrorPage from "./error-page";
-import WPage from "./routes/w_page";
-import Summary from "./routes/summary";
-import Response from "./routes/response";
-import ExtractContacts from "./routes/extractContacts";
-import ExtractDetails from "./routes/extractDetails";
-import Contact from "./routes/contact";
+import Summary from "./routes/summary/summary";
+import Response from "./routes/response/response";
+import ExtractContacts from "./routes/extract contacts/extractContacts";
+import ExtractDetails from "./routes/extract details/extractDetails";
+import Contact from "./routes/creator info/creators";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/w_page",
-    element: <WPage />,
     errorElement: <ErrorPage />,
   },
   {
