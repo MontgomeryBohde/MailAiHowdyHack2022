@@ -1,4 +1,5 @@
 .Title {
+    color:rgba(69, 67, 67, 0.75);
     font-size: 48px;
     font-weight: 600;
     margin-bottom: 16px;
@@ -8,6 +9,7 @@
     .Aayush,
     .Akshay,
     .Aditya {
+    color:rgba(69, 67, 67, 0.75);
     font-size: 32px;
     font-weight: 400;
     margin: 8px 0;
@@ -17,7 +19,7 @@
     .Aayush a,
     .Akshay a,
     .Aditya a {
-    color: white;
+    color: '#007bff' ;
     text-decoration: none;
     transition: color 0.2s ease;
     }
