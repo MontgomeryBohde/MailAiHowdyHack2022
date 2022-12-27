@@ -11,7 +11,7 @@ export default function Root() {
               <a href="extractContacts"><button className="extractContacts">Extract Contacts</button></a>
               <a href="extractDetails"><button className="extractDetails">Extract Details</button></a>
               <a href="response"><button className="response">Response</button></a>
-              <a href="response"><button className="creators">Creators</button></a>
+              <a href="creators"><button className="creators">Creators</button></a>
           </div>
         </div>
       </>
