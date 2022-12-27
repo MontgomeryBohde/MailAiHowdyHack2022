@@ -11,7 +11,7 @@ export default function Root() {
               <a href="extractContacts"><button className="extractContacts">Extract Contacts</button></a>
               <a href="extractDetails"><button className="extractDetails">Extract Details</button></a>
               <a href="response"><button className="response">Response</button></a>
-              <Link to="/creators" style={{ textDecoration: 'none' }}><h2 className="creators">About</h2></Link>
+              <Link to="/creators" style={{ textDecoration: 'none' }}><h2 className="creators">About Us</h2></Link>
           </div>
         </div>
       </>

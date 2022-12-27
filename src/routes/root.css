@@ -71,7 +71,7 @@
   
     .mainbuttons{
       font-family: 'Open Sans', sans-serif;
-      position: absolute;
+      position: fixed;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -157,5 +157,7 @@
       height: 55px;
       transition-duration: 0.4s;
       cursor: pointer;
-      
+      position: fixed;
+      top: 0;
+      right: 0;
   }

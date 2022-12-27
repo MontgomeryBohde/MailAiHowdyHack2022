@@ -19,11 +19,13 @@
     top: 29%;
     text-align: center;
     line-height: 1;
-}
-
-.title:hover{
-    color: black;
-}
+    transition: color 0.5s ease;
+  }
+  
+  .title:hover {
+    /* Use a hex color code for a cleaner color */
+    color: #d79b9b;
+  }
 
 .text_2 {
     overflow: hidden;
@@ -58,62 +60,73 @@
     50% {opacity: 1;}
     }
 
-    .inputME {
-    width: 400px;
-    height: 350px;
-    padding: 0 0 300px 0;
     
-    flex-wrap: wrap;
-    top: 200px;
-    left: 100px;
-    right: 0px;
-    bottom: 0px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    -webkit-transition: 0.5s;
-    border-color: rgb(255, 255, 255);
-    transition: 0.5s;
-    outline: none;
-    border-radius: 8px;
-    font-size: 30px;
-    position: fixed;
-    } 
-    .responseButton{     
-        position: absolute;
-        display: flex;
-        display: grid;
+    .responseButton {
+        /* Set the position to fixed to position the element relative to the viewport */
+        position: fixed;
+        /* Set the top property to 50% to vertically center the element */
         top: 60%;
-        border-radius: 22px;
-        justify-content: center;
-        background-color: transparent;
-        color: white;
-        border-color: rgb(255, 255, 255);
+        /* Set the left property to 50% to horizontally center the element */
+        left: 50%;
+        /* Set the transform property to translate(-50%, -50%) to adjust the element's position */
+        transform: translate(-50%, -50%);
+        /* Set the width and height of the button */
         width: 160px;
         height: 55px;
-        font-weight: 600;
+        /* Style the background color, border, font, and cursor of the button */
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        color: white;
         border-style: solid;
         transition-duration: 0.4s;
+        font-weight: 600;
+        border-radius: 22px;
         cursor: pointer;
-        margin: auto;
-}
+      }
+      
+      
+
 
 .responseButton:hover{
     background-color: rgba(225, 214, 214, 0.349);
 }
 
-.outputME{
-    /* display: flex;
-    align-self: center; */
+.inputME {
     display: inline;
-    width: 400px;
-    height: 350px;
-    /* padding: 0px 300px 0px 0px;  */
-
-    margin-left: 100px;
-    margin-top: -187.5px;
-    background-color: white;
-    color: black;
+    /* Change the width to 50% of the viewport width */
+    width: 25vw;
+    /* Change the height to 80% of the viewport height */
+    height: 40vh;
     border-color: rgb(255, 255, 255);
     border-radius: 8px;
     font-size: 30px;
-}
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin-left: 20px;
+    /* Add this style to prevent the user from manually resizing the element */
+    resize: none;
+  }
+  
+  .outputME {
+    display: inline;
+    /* Change the width to 50% of the viewport width */
+    width: 25vw;
+    /* Change the height to 80% of the viewport height */
+    height: 40vh;
+    background-color: white;
+    border-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: 20px;
+    /* Add this style to prevent the user from manually resizing the element */
+    resize: none;
+  }
+  
+  

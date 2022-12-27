@@ -1,0 +1,30 @@
+.Title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    }
+    
+    .Monte,
+    .Aayush,
+    .Akshay,
+    .Aditya {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 8px 0;
+    }
+    
+    .Monte a,
+    .Aayush a,
+    .Akshay a,
+    .Aditya a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    }
+    
+    .Monte a:hover,
+    .Aayush a:hover,
+    .Akshay a:hover,
+    .Aditya a:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
