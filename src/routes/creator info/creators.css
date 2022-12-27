@@ -19,9 +19,9 @@
     .Aayush a,
     .Akshay a,
     .Aditya a {
-    color: '#007bff' ;
+    color: #007bff ;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
     }
     
     .Monte a:hover,
@@ -30,3 +30,7 @@
     .Aditya a:hover {
     color: rgba(255, 255, 255, 0.75);
 }
+
+.linkedin-icon:visited {
+    color: #007bff !important; /* or any other color */
+  }
