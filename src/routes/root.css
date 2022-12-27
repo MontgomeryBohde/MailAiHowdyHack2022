@@ -150,3 +150,21 @@
     .response:hover{
       background-color: rgba(225, 214, 214, 0.349);
     }
+
+    .creators{
+      border-radius: 22px;
+      background-color: transparent;
+      color: white;
+      border-color: rgb(255, 255, 255);
+      width: 160px;
+      height: 55px;
+      font-weight: 600;
+      border-style: solid;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      margin: 20px;
+  }
+
+  .creators:hover{
+    background-color: rgba(225, 214, 214, 0.349);
+  }
