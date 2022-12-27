@@ -11,9 +11,9 @@ import reportWebVitals from './reportWebVitals';
 import ErrorPage from "./error-page";
 import Summary from "./routes/summary/summary";
 import Response from "./routes/response/response";
-import ExtractContacts from "./routes/extract contacts/extractContacts";
-import ExtractDetails from "./routes/extract details/extractDetails";
-import Contact from "./routes/creator info/creators";
+import ExtractContacts from "./routes/extractcontacts/extractContacts";
+import ExtractDetails from "./routes/extractdetails/extractDetails";
+import Contact from "./routes/creatorinfo/creators";
 
 const router = createBrowserRouter([
   {

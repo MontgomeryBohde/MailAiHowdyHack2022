@@ -1,0 +1,62 @@
+.Title {
+    color:rgba(69, 67, 67, 0.75);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    }
+    
+    .Monte,
+    .Aayush,
+    .Akshay,
+    .Aditya {
+    color:rgba(69, 67, 67, 0.75);
+    font-size: 32px;
+    font-weight: 400;
+    margin: 8px 0;
+    }
+    
+    .Monte .linkedin-icon,
+    .Aayush .linkedin-icon,
+    .Akshay .linkedin-icon,
+    .Aditya .linkedin-icon {
+    color: #007bff ;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    }
+
+    
+    .Monte .linkedin-icon:hover,
+    .Aayush .linkedin-icon:hover,
+    .Akshay .linkedin-icon:hover,
+    .Aditya .linkedin-icon:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.linkedin-icon:visited {
+    color: #007bff !important; /* or any other color */
+  }
+
+.instagram-icon{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .instagram-icon:visited{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+  -webkit-background-clip: text !important;
+          /* Also define standard property for compatibility */
+          background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  }
+  
+  .medium-icon {
+    color: #1931cb; /* or any other color */
+  }
+  
+  .medium-icon:visited {
+    color: #1931cb !important; /* or any other color */
+  }
+  
