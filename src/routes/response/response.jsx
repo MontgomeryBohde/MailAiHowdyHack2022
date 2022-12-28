@@ -10,9 +10,9 @@ export default function Response() {
 
    async function myFunction(){
     const OpenAI = require('openai-api');
-    const OPENAI_API_KEY = process.env.OPENAI_API_KEY;    const openai = new OpenAI(OPENAI_API_KEY);
+    const OPENAI_API_KEY = "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"
+    const openai = new OpenAI(OPENAI_API_KEY);
     const prompt = document.getElementById("fname").value;
-    console.log(OPENAI_API_KEY)
     const gptResponse = await openai.complete({
       engine: 'text-davinci-003',
       prompt: prompt,
