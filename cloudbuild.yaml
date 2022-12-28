@@ -1,0 +1,17 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-docker.pkg.dev/august-tract-364220/mail-ai-repo/mailai-dev:latest', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-docker.pkg.dev/august-tract-364220/mail-ai-repo/mailai-dev:latest']
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args:
+  - 'run'
+  - 'deploy'
+  - $_SERVICE_NAME
+  - '--image'
+  - 'us-docker.pkg.dev/august-tract-364220/mail-ai-repo/mailai-dev:latest'
+  - '--region'
+  - 'us-central1'
+images:
+- 'us-docker.pkg.dev/august-tract-364220/mail-ai-repo/mailai-dev:latest'
