@@ -8,23 +8,23 @@ export default function Response() {
     setInputValue(event.target.value);
   }
 
-  const myFunction = () => {
+   async function myFunction(){
     const OpenAI = require('openai-api');
-    const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-    const openai = new OpenAI(OPENAI_API_KEY);
-    const prompt = inputValue;
-    const gptResponse = openai.complete({
+    const OPENAI_API_KEY = process.env.OPENAI_API_KEY;    const openai = new OpenAI(OPENAI_API_KEY);
+    const prompt = document.getElementById("fname").value;
+    console.log(OPENAI_API_KEY)
+    const gptResponse = await openai.complete({
       engine: 'text-davinci-003',
       prompt: prompt,
       maxTokens: 75,
       temperature: 0.5,
       frequencyPenalty: 0.5,
       bestOf: 1,
-      n: 1,
       stream: false,
-      stop: ['\n', "testing"]
+      n: 1,
   });
-  console.log(gptResponse.data);
+  let output = document.getElementById("outputME");
+  output.innerHTML = gptResponse.data.choices[0].text;
   }
 
   return (
